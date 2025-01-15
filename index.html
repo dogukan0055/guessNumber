@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remembering Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="player-info">
+            <div id="player1" class="player">
+                Player 1 (<span id="score1">0</span>)
+            </div>
+            <div id="player2" class="player">
+                Player 2 (<span id="score2">0</span>)
+            </div>
+        </div>
+        <h1>Remembering Game</h1>
+        <p>Find numbers in ascending order from 1 to 9.</p>
+
+        <div class="grid"></div>
+        <p id="message"></p>
+
+    </div>
+
+    <!-- Username Modal -->
+    <div id="usernameModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to the Game!</h2>
+            <div id="playerForms">
+                <div class="player-input">
+                    <label for="player1Input">Player 1:</label>
+                    <input type="text" id="player1Input" placeholder="Enter username">
+                </div>
+                <div class="player-input">
+                    <label for="player2Input">Player 2:</label>
+                    <input type="text" id="player2Input" placeholder="Enter username">
+                </div>
+            </div>
+            <button id="startGameBtn">Start Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
